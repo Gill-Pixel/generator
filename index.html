@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Generator</title>
+    <script src="jquery-3.7.1 copy.js"></script>
+    <script src="generator.js"></script>
+    <style>
+        #output {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Song/Poem Generator</h1>
+
+    <div>
+        <label for="genre">Select Genre:</label>
+        <select id="genre">
+            <option value="upbeat">Upbeat</option>
+            <option value="melancholy">Melancholy</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="verse">Enter Verse:</label>
+        <textarea id="verse" rows="4" cols="50"></textarea>
+    </div>
+
+    <div>
+        <label for="location">Verse Location:</label>
+        <input type="number" id="location" min="1" placeholder="Enter location">
+    </div>
+
+    <button id="generate">Generate</button>
+
+    <div id="output">
+        <h2>Generated Song/Poem:</h2>
+    </div>
+
+</body>
+</html>
