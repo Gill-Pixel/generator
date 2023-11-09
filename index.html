@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Generator</title>
+    <script src="jquery-3.7.1 copy.js"></script>
+    <script src="generator.js"></script>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    h1, h2 {
+      color: #009688;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #009688;
+    }
+    select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 20px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px;
+      background-color: #009688;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00796b;
+    }
+    #generatedContent {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Song/Poem Generator</h1>
+
+    <label for="mood">Select Mood:</label>
+    <select id="mood">
+      <option value="upbeat">Upbeat</option>
+      <option value="melancholy">Melancholy</option>
+    </select>
+  
+    <br>
+  
+    <label for="verseType">Select Verse Type:</label>
+    <select id="verseType">
+      <option value="freeform">Freeform</option>
+      <option value="standard">Standard</option>
+    </select>
+  
+    <br>
+  
+    <label for="verseLocation">Select Verse Location:</label>
+    <select id="verseLocation">
+      <option value="start">Start</option>
+      <option value="end">End</option>
+    </select>
+  
+    <br>
+  
+    <label for="userVerse">Enter Your Verse:</label>
+    <textarea id="userVerse" rows="4" cols="50"></textarea>
+  
+    <br>
+  
+    <button id="generateButton">Generate</button>
+  
+    <h2>Generated Song/Poem:</h2>
+    <div id="generatedContent"></div>
+
+</body>
+</html>
